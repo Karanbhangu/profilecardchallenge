@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+}
+#card{
+    height: 300px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: -2px 2px 4px hsl(0, 0%, 27%);
+    z-index: 1;
+}
+#firstone{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upperpart{
+    height: 50%;
+}
+.lowerpart{
+    position: relative;
+    top: 20px;
+    height: 50%;
+}
+#one{
+    width: 280px;
+    border-radius: 15px 15px 0px 0px;
+}
+#person{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#two{
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #fff;
+    bottom: 50px;
+}
+p, span{
+    font-size: 18px;
+    font-family: Kumbh Sans;
+    font-weight: 700;
+}
+.firstp{
+    text-align: center;
+}
+.firstspan{
+    color: hsl(0, 0%, 59%);
+}
+.secondp{
+    position: relative;
+    top: 8px;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+    font-weight: 400;
+}
+.stats{
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.anotherspans{
+    position: relative;
+    top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.smalls{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    position: relative;
+    right: 5px;
+}
+#span3{
+    position: relative;
+    right: 0px;
+}
+.firstimage{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+}
+.firstt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+#imgop{
+    width: 800px;
+    height: 700px;
+    top: -150px;
+    left: -100px;
+    z-index: 0;
+    position: absolute;
+}
+#secondop{
+    width: 800px;
+    height: 700px;
+    bottom: -200px;
+    right: -100px;
+    z-index: 0;
+    position: absolute;
+}
+@media only screen and (max-width:375px){
+    #imgop{
+        width: 500px;
+        height: 500px;
+        top: -200px;
+        left: -200px;
+    }
+    #secondop{
+        width: 250px;
+        height: 280px;
+        bottom: 0;
+        right: 0;
+    }
+}
